@@ -261,7 +261,6 @@ def index():
               "f WHERE f.uid1=\'" + uid + "\' UNION SELECT f2.uid1 FROM " +
               "Friend f2 WHERE f2.uid2=\'" + uid + "\') AS s)")
       for f in friend_cursor:
-          print f
           friends.append(f) 
   # events
   events = []
